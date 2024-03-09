@@ -1,0 +1,30 @@
+GET http://localhost:5105/
+###
+GET http://localhost:5105/games
+###
+GET http://localhost:5105/games/1
+###
+POST http://localhost:5105/games
+Content-Type: application/json
+
+{
+    "name":"MineCraft",
+    "genreId": 1,
+    "price": 19.33,
+    "releaseDate":"2011-11-19"
+}
+###
+PUT http://localhost:5105/games/10
+Content-Type: application/json
+
+{
+  "id": 10,
+  "name": "MineCraft",
+  "genreId": 3,
+  "price": 19.3333,
+  "releaseDate": "2011-11-19"
+}
+
+###
+DELETE  http://localhost:5105/games/10
+
